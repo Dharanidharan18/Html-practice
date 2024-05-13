@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel landing page</title>
+</head>
+<body>
+    <style>
+        header {
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+    </style>
+    
+    <section class="showcase">
+        
+        <header>
+            <div class="container">
+                <h1>Travel Bookings.com</h1>
+                <nav>
+                    <ul>
+                        <li><a href="signup.html">Sign Up</a></li>
+                        <li><a href="travel.html">Home</a></li>
+                        <li><a href="book.html">Book Now</a></li>
+                        
+                       
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <video src="/picture/ariealview.mp4" muted loop autoplay></video>
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring the world</h3>
+            <p>
+                Man cannot discover new oceans unless he has the courage to lose sight of the shore
+            </p>
+            <a href="Signin.html">Login</a>
+        </div>
+        <ul class="social">
+            <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      
+            <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+        </ul>
+       
+    </section>
+
+    
+    <script>
+        const menutoggle= document.querySelector('.toggle')
+        const showcase=document.querySelector('.showcase')
+        menutoggle.addEventListener('click', () => {
+  menutoggle.classList.toggle('active');
+  showcase.classList.toggle('active');
+})
+    </script>
+     
+</body>
+</html>
